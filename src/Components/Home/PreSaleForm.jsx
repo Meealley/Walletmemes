@@ -2,6 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Divider } from "antd";
 import web3Logo from "../../assets/images/web3-logo.svg";
 import { Link } from "react-router-dom";
+import Eth from '../../assets/svgs/eth.svg'
+import Usdt from '../../assets/svgs/usdt.svg'
+import cardLogo from "../../assets/svgs/card.svg"
+
+
 const PreSaleForm = ({ launchDate }) => {
   // const [truncate] = useGlobalState("contractTextSt");
   const [enteredValue, setEnteredValue] = useState("");
@@ -82,7 +87,7 @@ const PreSaleForm = ({ launchDate }) => {
         <div className="gap-4 flex transition-all">
           <button className="flex uppercase items-center justify-center  hover:bg-gray-300 bg-white ease-out transition-all duration-500 border border-black w-[130px] h-[40px] rounded-md">
             <img
-              src="https://wallstmemes.com/assets/images/svg-icons/eth.svg"
+              src={Eth}
               alt="crypto"
               className="h-[22px]"
             />{" "}
@@ -90,7 +95,7 @@ const PreSaleForm = ({ launchDate }) => {
           </button>
           <button className="flex uppercase items-center justify-center hover:bg-gray-300 bg-white ease-out transition-all duration-500 border border-black w-[130px] h-[40px] rounded-md">
             <img
-              src="https://wallstmemes.com/assets/images/svg-icons/usdt.svg"
+              src={Usdt}
               alt="crypto"
               className="h-[22px]"
             />{" "}
@@ -98,7 +103,7 @@ const PreSaleForm = ({ launchDate }) => {
           </button>
           <button className="flex uppercase items-center justify-center hover:bg-gray-300 bg-white ease-out transition-all duration-500 border border-black w-[130px] h-[40px] rounded-md">
             <img
-              src="https://wallstmemes.com/assets/images/svg-icons/card.svg"
+              src={cardLogo}
               alt="crypto"
               className="h-[22px]"
             />{" "}

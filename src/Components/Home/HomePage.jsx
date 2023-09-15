@@ -8,8 +8,14 @@ import Telegram from "../../assets/svgs/telegram.svg";
 import Discord from "../../assets/svgs/discord.svg";
 import Youtube from "../../assets/svgs/youtube.svg";
 import Tiktok from "../../assets/svgs/tiktok.svg";
+import Wow from "../../assets/svgs/wow.svg";
 import PreSaleForm from "./PreSaleForm";
 import { Link } from "react-router-dom";
+import ElomMemes from "./ElomMemes";
+import WhitePaper from "./WhitePaper";
+import SwiperImages from "./SwiperImages";
+import WSMtoken from "./WSMtoken";
+import HowToBuy from "./HowToBuy";
 
 const HomePage = () => {
   const launchDate = new Date("2023-10-05T12:00:00");
@@ -73,7 +79,7 @@ const HomePage = () => {
         </div>
         {/* This is the Banner  */}
         <div className="my-4">
-          <img src={HomeBanner} alt="banner" className="z-0" />
+          {/* <img src={HomeBanner} alt="banner" className="z-0" />
           <div className="flex justify-center items-center z-10">
             <button className="bg-black border-2 shadow-xl  border-white py-[8px] flex  justify-center  text-[16px] w-[185px] h-[36px] rounded-full px-[16px] font-bold text-white uppercase ">
               <Link
@@ -83,11 +89,12 @@ const HomePage = () => {
                 whitepaper
               </Link>
             </button>
-          </div>
+          </div> */}
+          <WhitePaper />
         </div>
         {/* //We Meme up  */}
         <hr />
-        <div className="w-[398px] h-[418.77]">
+        <div className="w-[390px] h-[418.77]">
           <h1 className="text-center font-samiq text-[48px] uppercase font-bold py-[16px] mt-[48px]">
             we meme business!
           </h1>
@@ -117,11 +124,20 @@ const HomePage = () => {
               </p>
             </div>
           </div>
-          
-
-
         </div>
         <hr />
+        {/* the wow image  */}
+        <div className="py-[28px] flex items-center justify-center">
+          <img src={Wow} alt="wow" />
+        </div>
+        {/* test  */}
+        <ElomMemes />
+        {/* swiper  */}
+        <SwiperImages />
+        {/* wsmtoken  */}
+        <WSMtoken />
+        {/* how to buy  */}
+        <HowToBuy />
       </div>
     </>
   );
