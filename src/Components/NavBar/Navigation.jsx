@@ -19,7 +19,7 @@ const Navigation = () => {
   };
   return (
     <>
-      <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-5 pt-3 border-b border-black pb-2 bg-white bg-opacity-50">
+      <nav className="fixed top-0 left-0 w-full flex justify-between items-center px-5 pt-3 border-b border-black pb-2 bg-white bg-opacity-80">
         <div>
           <img src={Logo} alt="wall-street" className="w-[50px]" />
         </div>
@@ -42,7 +42,7 @@ const Navigation = () => {
             }`}
           >
             {/* start of the sidemenu bar  */}
-            <nav className="pt-3 px-[8px]">
+            <nav className="pt-3 px-[8px] relative">
               <ul className="text-white px-4 cursor-pointer">
                 <Link to={"/"} className="my-2">
                   <p className="font-samiq my-4   capitalize border-b font-semibold py-[3px]">
