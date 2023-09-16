@@ -16,6 +16,9 @@ import WhitePaper from "./WhitePaper";
 import SwiperImages from "./SwiperImages";
 import WSMtoken from "./WSMtoken";
 import HowToBuy from "./HowToBuy";
+import RoadMap from "./RoadMap";
+import Tokenomics from "./Tokenomics";
+import WSMmedia from "./WSMmedia";
 
 const HomePage = () => {
   const launchDate = new Date("2023-10-05T12:00:00");
@@ -138,6 +141,12 @@ const HomePage = () => {
         <WSMtoken />
         {/* how to buy  */}
         <HowToBuy />
+        {/* roadmap  */}
+        <RoadMap />
+        {/* tokennomis  */}
+        <Tokenomics />
+        {/* wsm media  */}
+        <WSMmedia />
       </div>
     </>
   );

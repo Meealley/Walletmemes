@@ -7,7 +7,7 @@ const HowToBuy = () => {
   return (
     <>
       <section>
-        <div>
+        <div className="mb-8">
           <div className="flex items-center justify-center">
             <img
               src={
@@ -88,6 +88,13 @@ const HowToBuy = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="my-8 pt-20">
+          <div className="my-8 flex justify-center items-center">
+            <button className="px-12 bg-black rounded-full text-white capitalize font-semibold py-3 text-[16px] tracking-wide shadow-md">
+              more help
+            </button>
           </div>
         </div>
       </section>
