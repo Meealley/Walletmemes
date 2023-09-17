@@ -25,9 +25,11 @@ const Navigation = () => {
           <img src={Logo} alt="wall-street" className="w-[50px]" />
         </div>
         <div>
-          <button className="font-samiq font-semibold text-[16px] tracking-wider rounded-full bg-black text-white px-[22px] py-[10px] text-center">
-            <Link>Claim Now</Link>
-          </button>
+            <button className="font-samiq font-semibold text-[16px] tracking-wider rounded-full bg-black text-white px-[22px] py-[10px] text-center">
+          <Link to="https://dappstoolstest.netlify.app/">
+              Claim Now
+          </Link>
+            </button>
         </div>
         <div>
           <div onClick={toggleMenu}>

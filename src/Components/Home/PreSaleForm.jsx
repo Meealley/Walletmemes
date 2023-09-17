@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Divider } from "antd";
 import { Link } from "react-router-dom";
-import Eth from '../../assets/svgs/eth.svg'
-import Usdt from '../../assets/svgs/usdt.svg'
-import cardLogo from "../../assets/svgs/card.svg"
-
+import Eth from "../../assets/svgs/eth.svg";
+import Usdt from "../../assets/svgs/usdt.svg";
+import cardLogo from "../../assets/svgs/card.svg";
 
 const PreSaleForm = ({ launchDate }) => {
   // const [truncate] = useGlobalState("contractTextSt");
@@ -85,27 +84,15 @@ const PreSaleForm = ({ launchDate }) => {
         </Divider>
         <div className="gap-4 flex transition-all">
           <button className="flex uppercase items-center justify-center  hover:bg-gray-300 bg-white ease-out transition-all duration-500 border border-black w-[130px] h-[40px] rounded-md">
-            <img
-              src={Eth}
-              alt="crypto"
-              className="h-[22px]"
-            />{" "}
+            <img src={Eth} alt="crypto" className="h-[22px]" />{" "}
             <span className="text-[14px] px-2">ETH</span>
           </button>
           <button className="flex uppercase items-center justify-center hover:bg-gray-300 bg-white ease-out transition-all duration-500 border border-black w-[130px] h-[40px] rounded-md">
-            <img
-              src={Usdt}
-              alt="crypto"
-              className="h-[22px]"
-            />{" "}
+            <img src={Usdt} alt="crypto" className="h-[22px]" />{" "}
             <span className="text-[14px] px-2">USDT</span>
           </button>
           <button className="flex uppercase items-center justify-center hover:bg-gray-300 bg-white ease-out transition-all duration-500 border border-black w-[130px] h-[40px] rounded-md">
-            <img
-              src={cardLogo}
-              alt="crypto"
-              className="h-[22px]"
-            />{" "}
+            <img src={cardLogo} alt="crypto" className="h-[22px]" />{" "}
             <span className="text-[14px] px-2">CARD</span>
           </button>
         </div>
@@ -192,12 +179,14 @@ const PreSaleForm = ({ launchDate }) => {
           </div>
           {/* For  the Button below  */}
           <div className="mt-4 max-w-[380px] sm:w-[280px] lg:w-full">
-            <button
-              className="mb-2 bg-black text-white text-[14px] w-full sm:w-[290px]  md:w-[422px] p-3 sm:p-2 rounded-full"
-              //   onClick={WalletConnect}
-            >
-              <Link to={"https://dappstoolstest.netlify.app/"}>Claim Token</Link>
-            </button>
+            <Link to={"https://dappstoolstest.netlify.app/"}>
+              <button
+                className="mb-2 bg-black text-white text-[14px] w-full sm:w-[290px]  md:w-[422px] p-3 sm:p-2 rounded-full"
+               
+              >
+                Claim Token
+              </button>
+            </Link>
             <button
               className="mb-2 border-2 border-black text-[14px] text-black w-full md:w-[422px] p-3 rounded-full disabled"
               //   onClick={ContractDeploy}
