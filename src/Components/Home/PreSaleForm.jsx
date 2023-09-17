@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Divider } from "antd";
-import web3Logo from "../../assets/images/web3-logo.svg";
 import { Link } from "react-router-dom";
 import Eth from '../../assets/svgs/eth.svg'
 import Usdt from '../../assets/svgs/usdt.svg'
@@ -152,11 +151,11 @@ const PreSaleForm = ({ launchDate }) => {
                   className="bg-gray-100 p-4  w-full md:w-[full] lg:w-[205px] rounded-md active:border-none"
                 />
                 <div className="absolute right-3 top-3 md:flex ">
-                  <img
+                  {/* <img
                     src="https://wallstmemes.com/assets/images/svg-icons/eth.svg"
                     alt="crypto"
                     className="h-[22px]"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -182,11 +181,11 @@ const PreSaleForm = ({ launchDate }) => {
                   className="bg-gray-100 p-4 w-full lg:w-[205px] rounded-md active:border-none"
                 />
                 <div className="flex absolute right-3 top-3">
-                  <img
+                  {/* <img
                     src="https://gempad.app/logo.svg"
                     alt="crypto"
                     className="h-[22px]"
-                  />
+                  /> */}
                 </div>
               </div>
             </div>
@@ -200,7 +199,7 @@ const PreSaleForm = ({ launchDate }) => {
               <Link to={"https://dappstoolstest.netlify.app/"}>Claim Token</Link>
             </button>
             <button
-              className="mb-2 border-2 border-black text-[14px] text-black w-full md:w-[422px] p-3 rounded-full"
+              className="mb-2 border-2 border-black text-[14px] text-black w-full md:w-[422px] p-3 rounded-full disabled"
               //   onClick={ContractDeploy}
             >
               Buy with BNB

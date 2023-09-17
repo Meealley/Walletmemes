@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../NavBar/Banner";
-import HomeBanner from "../../assets/svgs/banner-mobile.svg";
 import WallMemes from "../../assets/svgs/center-title.svg";
 import Instagram from "../../assets/images/instagram.png";
 import Twitter from "../../assets/svgs/twitter.svg";
@@ -19,6 +18,10 @@ import HowToBuy from "./HowToBuy";
 import RoadMap from "./RoadMap";
 import Tokenomics from "./Tokenomics";
 import WSMmedia from "./WSMmedia";
+import WSMAirdrop from "./WSMAirdrop";
+import FAQ from "./Faq/FAQ";
+import FooterBar from "./FooterBar";
+// import { Footer } from "antd/es/layout/layout";
 
 const HomePage = () => {
   const launchDate = new Date("2023-10-05T12:00:00");
@@ -32,42 +35,42 @@ const HomePage = () => {
         {/* This is the social icons  */}
         <div className="w-[354.3] px-4">
           <div className="mt-4 flex items-center justify-center px-[8px]">
-            <Link to={"/"}>
+            <Link to={"https://www.instagram.com/wallstbets/?igshid=MzRlODBiNWFlZA%3D%3D"}>
               <img
                 src={Instagram}
                 alt="instagram"
                 className="w-[45.98px] h-[42px] mx-[8px]"
               />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://twitter.com/wallstmemes"}>
               <img
                 src={Twitter}
                 alt="twitter"
                 className="w-[50px] h-[42px] mx-[8px]"
               />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://t.me/wallst_memes"}>
               <img
                 src={Telegram}
                 alt="instagram"
                 className="w-[50px] h-[42px] mx-[8px]"
               />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://discord.com/invite/4E538pzeGX"}>
               <img
                 src={Discord}
                 alt="di"
                 className="w-[50px] h-[42px] mx-[8px]"
               />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://www.youtube.com/channel/UCi-M8QFGjDbBQRY5lnl3x-g"}>
               <img
                 src={Youtube}
                 alt="youtube"
                 className="w-[50px] h-[42px] mx-[8px]"
               />
             </Link>
-            <Link to={"/"}>
+            <Link to={"https://www.tiktok.com/@wallstreetmemesofficial"}>
               <img
                 src={Tiktok}
                 alt="Tiktok"
@@ -147,6 +150,12 @@ const HomePage = () => {
         <Tokenomics />
         {/* wsm media  */}
         <WSMmedia />
+        {/* wsm airdrop */}
+        <WSMAirdrop />
+        {/* faq  */}
+        <FAQ />
+        {/* footer  */}
+        <FooterBar />
       </div>
     </>
   );

@@ -4,7 +4,7 @@ import tekenomics from "../../assets/svgs/tekenomics-sm.svg";
 const Tokenomics = () => {
   return (
     <>
-      <section className="py-[48px]  px-3 ">
+      <section className="py-[48px]  px-3 " id="tokenomics">
         <div>
           <h1 className="uppercase font-samiq font-bold text-center text-[48px] mb-8">
             tokenomics

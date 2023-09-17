@@ -6,7 +6,7 @@ import spongebob from "../../assets/images/avatar-3.png";
 const HowToBuy = () => {
   return (
     <>
-      <section>
+      <section id="buy">
         <div className="mb-8">
           <div className="flex items-center justify-center">
             <img

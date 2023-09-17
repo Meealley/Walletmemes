@@ -4,7 +4,7 @@ import Car from "../../assets/svgs/car.svg";
 const RoadMap = () => {
   return (
     <>
-      <section className="pt-12 my-5 px-3">
+      <section className="pt-12 my-5 px-3" id="roadmap">
         <div>
           <h1 className="uppercase font-samiq font-bold text-center text-[48px] mb-8">
             roadmap

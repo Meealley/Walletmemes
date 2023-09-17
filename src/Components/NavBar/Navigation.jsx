@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Logo from "../../assets/svgs/wall-street.svg";
+
 import Bar from "../../assets/svgs/bar.svg";
 import CloseBar from "../../assets/svgs/close-bar.svg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Wallet from "../../assets/svgs/wallet.svg";
 import Instagram from "../../assets/images/instagram.png";
 import Twitter from "../../assets/svgs/twitter.svg";
@@ -10,6 +12,7 @@ import Telegram from "../../assets/svgs/telegram.svg";
 import Discord from "../../assets/svgs/discord.svg";
 import Youtube from "../../assets/svgs/youtube.svg";
 import Tiktok from "../../assets/svgs/tiktok.svg";
+import NavButton from "./NavButton";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +28,7 @@ const Navigation = () => {
         </div>
         <div>
           <button className="font-samiq font-semibold text-[16px] tracking-wider rounded-full bg-black text-white px-[22px] py-[10px] text-center">
-            Stake Now
+            <Link>Claim Now</Link>
           </button>
         </div>
         <div>
@@ -49,28 +52,28 @@ const Navigation = () => {
                     staking
                   </p>
                 </Link>
-                <Link to={"/"} className="">
+                <Link to={"roadmap"} className="">
                   <p className="font-samiq my-4 capitalize border-b font-semibold py-[3px]">
                     {" "}
                     community
                   </p>
                 </Link>
-                <Link to={"/"} className="">
+                <Link to="buy" className="">
                   <p className="font-samiq my-4 capitalize border-b font-semibold py-[3px]">
                     how to buy
                   </p>
                 </Link>
-                <Link to={"/"} className="">
+                <Link to="tokenomics" className="">
                   <p className="font-samiq my-4 capitalize border-b font-semibold py-[3px]">
                     tokenomics
                   </p>
                 </Link>
-                <Link to={"/"} className="">
+                <Link to={"airdrop"} className="">
                   <p className="font-samiq my-4 capitalize border-b font-semibold py-[3px]">
                     airdrop
                   </p>
                 </Link>
-                <Link to={"/"} className="">
+                <Link to={"media"} className="">
                   <p className="font-samiq my-4 capitalize border-b font-semibold py-[3px]">
                     media
                   </p>
@@ -78,12 +81,7 @@ const Navigation = () => {
               </ul>
               {/* connect wallet button  */}
               <div className="py-4 flex items-center px-[8px]">
-                <button className="text-white py-[10px] px-[14px] bg-[#182b48] border border-white w-[280px] h-[45.5px]">
-                  <span className="capitalize text-l font-bold flex items-center">
-                    <img src={Wallet} alt="wallet" className="mr-3" /> connect
-                    wallet
-                  </span>
-                </button>
+                <NavButton />
               </div>
 
               {/* this is the button for the language change  */}
@@ -95,42 +93,50 @@ const Navigation = () => {
 
               {/* This is the social icons  */}
               <div className="mt-4 flex items-center px-[8px]">
-                <Link to={"/"}>
+                <Link
+                  to={
+                    "https://www.instagram.com/wallstbets/?igshid=MzRlODBiNWFlZA%3D%3D"
+                  }
+                >
                   <img
                     src={Instagram}
                     alt="instagram"
                     className="w-[30.7px] h-[30px] mx-[8px]"
                   />
                 </Link>
-                <Link to={"/"}>
+                <Link to={"https://twitter.com/wallstmemes"}>
                   <img
                     src={Twitter}
                     alt="twitter"
                     className="w-[30.7px] h-[30px] mx-[8px]"
                   />
                 </Link>
-                <Link to={"/"}>
+                <Link to={"https://t.me/wallst_memes"}>
                   <img
                     src={Telegram}
                     alt="instagram"
                     className="w-[30.7px] h-[30px] mx-[8px]"
                   />
                 </Link>
-                <Link to={"/"}>
+                <Link to={"https://discord.com/invite/4E538pzeGX"}>
                   <img
                     src={Discord}
                     alt="di"
                     className="w-[30.7px] h-[30px] mx-[8px]"
                   />
                 </Link>
-                <Link to={"/"}>
+                <Link
+                  to={
+                    "https://www.youtube.com/channel/UCi-M8QFGjDbBQRY5lnl3x-g"
+                  }
+                >
                   <img
                     src={Youtube}
                     alt="youtube"
                     className="w-[30.7px] h-[30px] mx-[8px]"
                   />
                 </Link>
-                <Link to={"/"}>
+                <Link to={"https://www.tiktok.com/@wallstreetmemesofficial"}>
                   <img
                     src={Tiktok}
                     alt="Tiktok"
