@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../../assets/svgs/wall-street.svg";
-import tokenLogo from '../../assets/svgs/wsm-meme-bg-sm.svg';
+import tokenLogo from "../../assets/svgs/wsm-meme-bg-sm.svg";
 
 const WSMtoken = () => {
   return (

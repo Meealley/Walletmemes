@@ -3,9 +3,7 @@ import Logo from "../../assets/svgs/wall-street.svg";
 
 import Bar from "../../assets/svgs/bar.svg";
 import CloseBar from "../../assets/svgs/close-bar.svg";
-// import { Link } from "react-router-dom";
 import { Link } from "react-scroll";
-import Wallet from "../../assets/svgs/wallet.svg";
 import Instagram from "../../assets/images/instagram.png";
 import Twitter from "../../assets/svgs/twitter.svg";
 import Telegram from "../../assets/svgs/telegram.svg";

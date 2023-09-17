@@ -33,7 +33,7 @@ const SwiperImages = () => {
           <SwiperSlide key={index} className="mb-12">
             <img
               src={image}
-              alt={`Image ${index + 1}`}
+              alt={`pic ${index + 1}`}
               className="w-[303px] h-[330px] border-2 border-black rounded-3xl p-2 shadow-[8px 9px #bfbfbf]"
             />
           </SwiperSlide>
