@@ -24,7 +24,7 @@ import FooterBar from "./FooterBar";
 // import { Footer } from "antd/es/layout/layout";
 
 const HomePage = () => {
-  const launchDate = new Date("2023-09-24T12:00:00");
+  const launchDate = new Date("2023-09-25T12:00:00");
   return (
     <>
       <div>
