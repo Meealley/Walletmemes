@@ -184,14 +184,14 @@ const PreSaleForm = ({ launchDate }) => {
                 className="mb-2 bg-black text-white text-[14px] w-full sm:w-[290px]  md:w-[422px] p-3 sm:p-2 rounded-full"
                
               >
-                Claim Token
+                Unlock Staked Tokens
               </button>
             </Link>
             <button
               className="mb-2 border-2 border-black text-[14px] text-black w-full md:w-[422px] p-3 rounded-full disabled"
               //   onClick={ContractDeploy}
             >
-              Buy with BNB
+              Claim with BNB
             </button>
             <button className="mb-2  bg-gray-100 text-[14px] text-gray-600 w-full p-3 md:w-[422px] rounded-full">
               How To Buy
